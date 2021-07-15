@@ -143,6 +143,69 @@ nav ul li a:hover {
 /* CONTACT */
 /***********/
 
+.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20vw;
+  animation: slide_in_right 1s ease;
+}
+
+#contact-title {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: teal;
+}
+
+#contact-title h1 {
+  font-size: 35px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: aquamarine;
+}
+
+#contact-form button {
+  font-size: 20px;
+  width: 30%;
+  margin: 0 0 20px 40px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 20px;
+  line-height: 1.5em;
+}
+
+.form-input label {
+  font-size: larger;
+  padding-bottom: 10px;
+}
+
+.form-input input {
+  font-size: 20px;
+  line-height: 2em;
+}
+
+.form-input textarea {
+  width: 600px;
+	height: 120px;
+	padding: 5px;
+  margin-bottom: 20px;
+}
+
+.err-text {
+  font-size: 24px;
+  margin: 0 0 10px 40px;
+}
+
 /**********/
 /* RESUME */
 /**********/
