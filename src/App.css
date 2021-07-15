@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* .App {
   text-align: center;
 } */
@@ -43,6 +47,10 @@
   }
 } */
 
+/**********/
+/* HEADER */
+/**********/
+
 header {
   height: 80px;
   background-color: thistle;
@@ -58,6 +66,10 @@ header h1 {
   padding: 10px;
   margin-left: 30px;
 }
+
+/*******/
+/* NAV */
+/*******/
 
 nav ul {
   list-style: none;
@@ -85,10 +97,15 @@ nav ul li a:hover {
   border-radius: 50px;
 }
 
+/*********/
+/* ABOUT */
+/*********/
+
 .about-me {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  animation: slide_in_right 1s ease;
 }
 
 #about {
@@ -96,14 +113,15 @@ nav ul li a:hover {
   font-size: 35px;
   display: flex;
   justify-content: center;
+  color: teal;
 }
 
 .about-content {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: aliceblue;
-  border-radius: 50px; */
+  /* background-color: aliceblue; */
+  /* border-radius: 50px; */
 }
 
 .about-content img {
@@ -113,14 +131,34 @@ nav ul li a:hover {
 
 .about-content p {
   background-color: aquamarine;
-  padding: 20px;
-  padding-right: 40px;
-  border-radius: 50px 0px 0px 50px;
-  text-align: right;
+  padding: 30px;
+  margin-right: 40px;
+  border-radius: 50px;
+  text-align: center;
   font-size: 20px;
   line-height: 1.5em;
 }
 
+/***********/
+/* CONTACT */
+/***********/
+
+/**********/
+/* RESUME */
+/**********/
+
+/*************/
+/* PORTFOLIO */
+/*************/
+
+/***********/
+/* PROJECT */
+/***********/
+
+
+/**********/
+/* FOOTER */
+/**********/
 
 footer {
   background-color: thistle;
@@ -137,4 +175,19 @@ footer a {
   color: teal;
   font-size: 40px;
   margin-top: 10px;
+}
+
+@keyframes slide_in_right {
+  0% {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  50% {
+    opacity: 0.75;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
