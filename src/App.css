@@ -210,6 +210,62 @@ nav ul li a:hover {
 /* RESUME */
 /**********/
 
+.resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20vw;
+  animation: slide_in_right 1s ease;
+}
+
+#resume-title {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: teal;
+}
+
+#resume-title h1 {
+  font-size: 35px;
+}
+
+.prof-list-container {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: aquamarine;
+}
+
+.prof-list-container a {
+  color: teal;
+  text-decoration: none;
+  text-align: center;
+}
+
+.prof-list-container a h3 {
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-top: 2px solid black;
+}
+
+.prof-list-title {
+  font-size: 28px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.prof-list {
+  list-style: none;
+}
+
+.prof-list li {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
 /*************/
 /* PORTFOLIO */
 /*************/
