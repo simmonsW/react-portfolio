@@ -7,20 +7,16 @@ function Nav(props) {
   return (
     <nav>
       <ul>
-        {/* About */}
-        {/* Portfolio */}
-        {/* Resume */}
-        {/* Contact */}
-        <li className={navChoice === 'about-me' && 'navActive'}>
+        <li key="1" className={navChoice === 'about-me' ? 'navActive' : undefined}>
           <a href="#about-me" onClick={() => setNavChoice('about-me')}>About Me</a>
         </li>
-        <li className={navChoice === 'portfolio' && 'navActive'}>
+        <li key="2" className={navChoice === 'portfolio' ? 'navActive' : undefined}>
           <a href="#portfolio" onClick={() => setNavChoice('portfolio')}>Portfolio</a>
         </li>
-        <li className={navChoice === 'resume' && 'navActive'}>
+        <li key="3" className={navChoice === 'resume' ? 'navActive' : undefined}>
           <a href="#resume" onClick={() => setNavChoice('resume')}>Resume</a>
         </li>
-        <li className={navChoice === 'contact' && 'navActive'}>
+        <li key="4" className={navChoice === 'contact' ? 'navActive' : undefined}>
           <a href="#contact" onClick={() => setNavChoice('contact')}>Contact</a>
         </li>
       </ul>

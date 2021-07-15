@@ -375,6 +375,22 @@ footer a {
   margin-top: 10px;
 }
 
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media only screen and (max-width: 885px) {
+  header {
+    height: 120px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-bottom: 10px;
+  }
+}
+
 /*************/
 /* KEYFRAMES */
 /*************/

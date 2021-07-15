@@ -27,8 +27,8 @@ function Resume() {
           Proficiencies
         </h2>
         <ul className="prof-list">
-          {proficiencyArr.map(prof => (
-            <li key={prof.index} className="prof">
+          {proficiencyArr.map((prof, index) => (
+            <li key={index} className="prof">
               {prof}
             </li>
           ))}
