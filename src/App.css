@@ -8,6 +8,13 @@ html {
   overflow-x: hidden;
 }
 
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -80px;
+}
+
 /* .App {
   text-align: center;
 } */
@@ -270,10 +277,78 @@ nav ul li a:hover {
 /* PORTFOLIO */
 /*************/
 
+.portfolio {
+  animation: slide_in_up 1s ease;
+  margin-bottom: 20px;
+}
+
+.portfolio-title {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 40px;
+  color: teal;
+}
+
 /***********/
 /* PROJECT */
 /***********/
 
+#project-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: fit-content;
+  padding: 20px;
+  margin: 20px;
+  background-color: turquoise;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project img {
+  height: 180px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.project-title {
+  font-size: 26px;
+  padding: 20px 0;
+}
+
+.project-desc {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  width: 320px;
+}
+
+.project-links {
+  margin-top: 15px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-links a {
+  font-size: 250%;
+  color: black;
+}
+
+.project-links div:hover {
+  animation: shake 0.4s ease;
+}
 
 /**********/
 /* FOOTER */
@@ -290,11 +365,19 @@ footer {
   bottom: 0;
 }
 
+footer, .push {
+  height: 80px;
+}
+
 footer a {
   color: teal;
   font-size: 40px;
   margin-top: 10px;
 }
+
+/*************/
+/* KEYFRAMES */
+/*************/
 
 @keyframes slide_in_right {
   0% {
@@ -308,5 +391,35 @@ footer a {
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@keyframes slide_in_up {
+  0% {
+    opacity: 0;
+    transform: translateY(800px);
+  }
+  50% {
+    opacity: 0.75;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(20deg);
+  }
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

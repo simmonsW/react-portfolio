@@ -29,14 +29,15 @@ function App() {
 
   return (
     <div className="App">
-      <Header navChoice={navChoice} setNavChoice={setNavChoice}></Header>
-
-      <div>
-        <main>
-          {navSelect()}
-        </main>
+      <div className="wrapper">
+        <Header navChoice={navChoice} setNavChoice={setNavChoice}></Header>
+        <div>
+          <main>
+            {navSelect()}
+          </main>
+        </div>
+        <div className="push"></div>
       </div>
-
       <div>
         <Footer></Footer>
       </div>

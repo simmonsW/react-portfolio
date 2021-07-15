@@ -1,8 +1,14 @@
 import React from 'react';
+import Project from '../Project';
 
 function Portfolio() {
   return(
-    <h1>This is the Portfolio page!</h1>
+    <section className="portfolio">
+      <h1 className="portfolio-title">
+        Portfolio
+      </h1>
+      <Project></Project>
+    </section>
   )
 };
 
