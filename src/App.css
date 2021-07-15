@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 #about {
-  padding-top: 20px;
+  padding-top: 40px;
   font-size: 35px;
   display: flex;
   justify-content: center;
@@ -162,7 +162,8 @@ nav ul li a:hover {
 #contact-title {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   color: teal;
 }
 
@@ -229,7 +230,8 @@ nav ul li a:hover {
 #resume-title {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   color: teal;
 }
 
@@ -388,6 +390,33 @@ footer a {
 
   nav ul {
     margin-bottom: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-content p {
+    margin: 0 40px 30px 40px;
+  }
+
+  .form-input {
+    line-height: 1;
+    padding-bottom: 0px;
+  }
+
+  .form-input input {
+    line-height: 1.5em;
+  }
+
+  .form-input textarea {
+    width: 300px;
+  }
+
+  .err-text {
+    font-size: 20px;
+    margin-left: 53px;
   }
 }
 
