@@ -91,7 +91,7 @@ nav li {
 }
 
 nav ul li a {
-  font-size: large;
+  font-size: 18px;
   text-decoration: none;
   padding: 10px 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -112,7 +112,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  animation: slide_in_right 1s ease;
+  animation: slide_in_up 1s ease;
 }
 
 #about {
@@ -127,11 +127,11 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: aliceblue; */
-  /* border-radius: 50px; */
 }
 
 .about-content img {
+  width: 350px;
+  height: auto;
   padding: 20px 40px 20px 40px;
   border-radius: 75px;
 }
@@ -156,7 +156,7 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   margin: 0 20vw;
-  animation: slide_in_right 1s ease;
+  animation: slide_in_up 1s ease;
 }
 
 #contact-title {
@@ -169,6 +169,7 @@ nav ul li a:hover {
 
 #contact-title h1 {
   font-size: 35px;
+  white-space: nowrap;
 }
 
 #contact-form {
@@ -224,7 +225,8 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   margin: 0 20vw;
-  animation: slide_in_right 1s ease;
+  margin-bottom: 20px;
+  animation: slide_in_up 1s ease;
 }
 
 #resume-title {
@@ -388,6 +390,10 @@ footer a {
     flex-direction: column;
   }
 
+  header h1 {
+    margin-left: 0px;
+  }
+
   nav ul {
     margin-bottom: 10px;
   }
@@ -416,7 +422,48 @@ footer a {
 
   .err-text {
     font-size: 20px;
-    margin-left: 53px;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  nav li {
+    padding: 10px 0px;
+  }
+
+  nav ul li a {
+    padding: 10px 5px;
+  }
+
+  #contact-form {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .form-input {
+    margin: 0px 5px; 
+  }
+
+  .form-input textarea {
+    width: 220px;
+  }
+
+  .project img {
+    height: 140px;
+    width: 230px;
+  }
+
+  .project-desc {
+    width: 250px;
+  }
+
+  .project-links {
+    width: 230px;
   }
 }
 
