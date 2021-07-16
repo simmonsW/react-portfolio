@@ -1,4 +1,5 @@
 import React from 'react';
+import { RiEqualizerFill } from 'react-icons/ri';
 
 function Resume() {
 
@@ -33,7 +34,11 @@ function Resume() {
             </li>
           ))}
         </ul>
-        <a href="https://www.google.com">
+        <a
+          href={require('../../assets/resume/wyatt-simmons-test-resume.pdf').default}
+          target="_blank"
+          download="wyatt-simmons-test-resume.pdf"
+        >
           <h3>
             Download Resume
           </h3>
