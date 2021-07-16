@@ -8,7 +8,10 @@ function About() {
       </h1>
 
       <div className="about-content">
-        <img src={require("../../assets/about-me/Its-a-me.jpg").default} />
+        <img 
+          src={require("../../assets/about-me/Its-a-me.jpg").default} 
+          alt="Wyatt Simmons"
+        />
         <p className="about-description">
           Welcome! My name is Wyatt Simmons and thanks for checking out my website! I
           am a soon to be graduate from the UCLA coding Bootcamp. I enjoy working with 

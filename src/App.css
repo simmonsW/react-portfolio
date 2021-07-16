@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --teal: rgb(0, 128, 128);
+  --pale_purple_pantone: rgb(232, 217, 232);
+  --powder_blue: rgb(194, 223, 227);
+  --cultured: rgb(244, 245, 246);
+  --gunmetal: rgb(37, 50, 55);
+}
+
 html {
-  overflow-x: hidden;
+  background-color: var(--cultured);
 }
 
 .wrapper {
@@ -15,52 +23,13 @@ html {
   margin: 0 auto -80px;
 }
 
-/* .App {
-  text-align: center;
-} */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 /**********/
 /* HEADER */
 /**********/
 
 header {
   height: 80px;
-  background-color: thistle;
+  background-color: var(--pale_purple_pantone);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +37,7 @@ header {
 
 header h1 {
   font-family:'Courier New', Courier, monospace;
-  color: teal;
+  color: var(--teal);
   font-size: 36px;
   padding: 10px;
   margin-left: 30px;
@@ -95,12 +64,12 @@ nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
   font-family: Arial, Helvetica, sans-serif;
-  color: teal;
+  color: var(--teal);
 }
 
 nav ul li a:hover {
-  color: thistle;
-  background-color: teal;
+  color: var(--pale_purple_pantone);
+  background-color: var(--teal);
   border-radius: 50px;
 }
 
@@ -120,7 +89,7 @@ nav ul li a:hover {
   font-size: 35px;
   display: flex;
   justify-content: center;
-  color: teal;
+  color: var(--teal);
 }
 
 .about-content {
@@ -133,11 +102,12 @@ nav ul li a:hover {
   width: 350px;
   height: auto;
   padding: 20px 40px 20px 40px;
-  border-radius: 75px;
+  border-radius: 100px / 75px;
 }
 
 .about-content p {
-  background-color: aquamarine;
+  background-color: var(--powder_blue);
+  color: var(--gunmetal);
   padding: 30px;
   margin-right: 40px;
   border-radius: 50px;
@@ -164,7 +134,7 @@ nav ul li a:hover {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: teal;
+  color: var(--teal);
 }
 
 #contact-title h1 {
@@ -176,24 +146,40 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   border-radius: 50px;
-  background-color: aquamarine;
+  margin-bottom: 20px;
+  background-color: var(--powder_blue);
 }
 
-#contact-form button {
+.submit-btn {
   font-size: 20px;
   width: 30%;
-  margin: 0 0 20px 40px;
+  margin: 20px 0 20px 40px;
+  text-decoration: none;
+  padding: 5px 0px;
+  outline: none;
+  cursor: pointer;
+  color: var(--gunmetal);
+  border: 1px solid var(--gunmetal);
+  border-radius: 50px;
+  background-color: var(--pale_purple_pantone);
+}
+
+.submit-btn:hover {
+  color: var(--pale_purple_pantone);
+  background-color: var(--teal);
 }
 
 .form-input {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  padding-bottom: 0px;
   margin: 0 20px;
   line-height: 1.5em;
 }
 
 .form-input label {
+  color: var(--gunmetal);
   font-size: larger;
   padding-bottom: 10px;
 }
@@ -207,12 +193,13 @@ nav ul li a:hover {
   width: 600px;
 	height: 120px;
 	padding: 5px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .err-text {
-  font-size: 24px;
-  margin: 0 0 10px 40px;
+  font-size: 22px;
+  padding: 5px ;
+  /* margin: 0 0 10px 45px; */
 }
 
 /**********/
@@ -234,7 +221,7 @@ nav ul li a:hover {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: teal;
+  color: var(--teal);
 }
 
 #resume-title h1 {
@@ -244,30 +231,30 @@ nav ul li a:hover {
 .prof-list-container {
   padding: 20px 40px;
   border-radius: 50px;
-  background-color: aquamarine;
+  background-color: var(--powder_blue);
 }
 
 .prof-list-container a {
-  color: teal;
+  color: var(--gunmetal);
   text-decoration: none;
   text-align: center;
 }
 
 .prof-list-container a h3 {
-  margin-top: 10px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  border-top: 2px solid black;
+  padding: 20px 0px 5px 0px;
 }
 
 .prof-list-title {
+  color: var(--gunmetal);
   font-size: 28px;
-  padding: 0 15px;
-  margin-bottom: 10px;
-  border-bottom: 2px solid black;
+  padding: 0 15px 10px 15px;
 }
 
 .prof-list {
+  border: 2px var(--gunmetal);
+  border-style: solid none;
+  color: var(--gunmetal);
+  padding: 10px 0px;
   list-style: none;
 }
 
@@ -292,7 +279,7 @@ nav ul li a:hover {
   justify-content: center;
   margin: 20px;
   margin-top: 40px;
-  color: teal;
+  color: var(--teal);
 }
 
 /***********/
@@ -306,10 +293,11 @@ nav ul li a:hover {
 }
 
 .project {
+  color: var(--gunmetal);
   width: fit-content;
   padding: 20px;
   margin: 20px;
-  background-color: turquoise;
+  background-color: var(--powder_blue);
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -322,13 +310,14 @@ nav ul li a:hover {
   position: relative;
   height: 180px;
   width: 300px;
-  border: 2px solid black;
+  border: 2px solid var(--gunmetal);
   border-radius: 25px;
 }
 
 .project-title {
   font-size: 26px;
   padding: 20px 0;
+  color: var(--gunmetal);
 }
 
 .project-desc {
@@ -336,8 +325,8 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border: 2px var(--gunmetal);
+  border-style: solid none;
   height: 100px;
   padding: 0px 20px;
   width: 320px;
@@ -365,7 +354,7 @@ nav ul li a:hover {
 /**********/
 
 footer {
-  background-color: thistle;
+  background-color: var(--pale_purple_pantone);
   position: fixed;
   display: flex;
   align-items: center;
@@ -380,9 +369,13 @@ footer, .push {
 }
 
 footer a {
-  color: teal;
+  color: var(--teal);
   font-size: 40px;
   margin-top: 10px;
+}
+
+footer a:hover {
+  animation: shake 0.4s ease;
 }
 
 /*****************/
@@ -513,10 +506,10 @@ footer a {
     transform: rotate(0deg);
   }
   33% {
-    transform: rotate(20deg);
+    transform: rotate(20deg) scale(1.6);
   }
   66% {
-    transform: rotate(-20deg);
+    transform: rotate(-20deg) scale(1.6);
   }
   100% {
     transform: rotate(0deg);

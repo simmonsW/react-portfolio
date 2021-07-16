@@ -11,7 +11,6 @@ function Contact() {
   function handleChange(e) {
     if (e.target.name = 'email') {
       const isValid = validateEmail(e.target.value);
-      console.log(isValid);
 
       if (!isValid) {
         setErrorMessage('Your email is invalid.');
@@ -55,7 +54,7 @@ function Contact() {
             <p className="err-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit</button>
+        <button type="submit" className='submit-btn'>Submit</button>
       </form>
     </section>
   )
