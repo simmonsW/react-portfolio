@@ -1,5 +1,4 @@
 import React from 'react';
-import { RiEqualizerFill } from 'react-icons/ri';
 
 function Resume() {
 
@@ -18,8 +17,8 @@ function Resume() {
 
   return(
     <section className="resume-page">
-      <div id="resume-title">
-        <h1>
+      <div>
+        <h1 id="resume-title">
           Resume
         </h1>
       </div>
@@ -37,6 +36,7 @@ function Resume() {
         <a
           href={require('../../assets/resume/wyatt-simmons-test-resume.pdf').default}
           target="_blank"
+          rel="noreferrer"
           download="wyatt-simmons-test-resume.pdf"
         >
           <h3>

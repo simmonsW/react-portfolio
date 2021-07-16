@@ -10,9 +10,11 @@
   --powder_blue: rgb(194, 223, 227);
   --cultured: rgb(244, 245, 246);
   --gunmetal: rgb(37, 50, 55);
+  --fonts: 'Courier New', Courier, monospace;
 }
 
 html {
+  overflow-x: hidden;
   background-color: var(--cultured);
 }
 
@@ -36,11 +38,12 @@ header {
 }
 
 header h1 {
-  font-family:'Courier New', Courier, monospace;
+  font-family: var(--fonts);
   color: var(--teal);
   font-size: 36px;
   padding: 10px;
   margin-left: 30px;
+  white-space: nowrap;
 }
 
 /*******/
@@ -56,14 +59,15 @@ nav ul {
 }
 
 nav li {
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 nav ul li a {
   font-size: 18px;
   text-decoration: none;
   padding: 10px 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonts);
+  font-weight: bolder;
   color: var(--teal);
 }
 
@@ -83,12 +87,13 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: slide_in_up 1s ease;
+  animation: slide_in_right 1s ease;
 }
 
 #about {
+  font-family: var(--fonts);
   padding-top: 40px;
-  font-size: 35px;
+  font-size: 38px;
   display: flex;
   justify-content: center;
   color: var(--teal);
@@ -111,6 +116,8 @@ nav ul li a:hover {
 .about-content p {
   background-color: var(--powder_blue);
   color: var(--gunmetal);
+  font-family: var(--fonts);
+  font-weight: bold;
   padding: 30px;
   margin-right: 40px;
   border-radius: 50px;
@@ -129,7 +136,7 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   margin: 0 20vw;
-  animation: slide_in_up 1s ease;
+  animation: slide_in_right 1s ease;
 }
 
 #contact-title {
@@ -137,12 +144,10 @@ nav ul li a:hover {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: var(--teal);
-}
-
-#contact-title h1 {
-  font-size: 35px;
+  font-family: var(--fonts);
+  font-size: 38px;
   white-space: nowrap;
+  color: var(--teal);
 }
 
 #contact-form {
@@ -154,6 +159,8 @@ nav ul li a:hover {
 }
 
 .submit-btn {
+  font-family: var(--fonts);
+  font-weight: bolder;
   font-size: 20px;
   width: 30%;
   margin: 20px 0 20px 40px;
@@ -183,26 +190,33 @@ nav ul li a:hover {
 
 .form-input label {
   color: var(--gunmetal);
-  font-size: larger;
+  font-family: var(--fonts);
+  font-weight: bolder;
+  font-size: 20px;
   padding-bottom: 10px;
 }
 
 .form-input input {
+  font-family: var(--fonts);
+  font-weight: bold;
   font-size: 20px;
   line-height: 2em;
 }
 
 .form-input textarea {
+  font-family: var(--fonts);
+  font-size: 16px;
+  font-weight: bold;
   width: 600px;
 	height: 120px;
 	padding: 5px;
-  /* margin-bottom: 20px; */
 }
 
 .err-text {
-  font-size: 22px;
-  padding: 5px ;
-  /* margin: 0 0 10px 45px; */
+  font-family: var(--fonts);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 40px;
 }
 
 /**********/
@@ -216,7 +230,7 @@ nav ul li a:hover {
   flex-direction: column;
   margin: 0 20vw;
   margin-bottom: 20px;
-  animation: slide_in_up 1s ease;
+  animation: slide_in_right 1s ease;
 }
 
 #resume-title {
@@ -224,11 +238,9 @@ nav ul li a:hover {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 20px;
+  font-family: var(--fonts);
+  font-size: 38px;
   color: var(--teal);
-}
-
-#resume-title h1 {
-  font-size: 35px;
 }
 
 .prof-list-container {
@@ -239,6 +251,8 @@ nav ul li a:hover {
 
 .prof-list-container a {
   color: var(--gunmetal);
+  font-family: var(--fonts);
+  font-size: 18px;
   text-decoration: none;
   text-align: center;
 }
@@ -249,6 +263,7 @@ nav ul li a:hover {
 
 .prof-list-title {
   color: var(--gunmetal);
+  font-family: var(--fonts);
   font-size: 28px;
   padding: 0 15px 10px 15px;
 }
@@ -262,6 +277,8 @@ nav ul li a:hover {
 }
 
 .prof-list li {
+  font-family: var(--fonts);
+  font-weight: bold;
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
@@ -272,12 +289,13 @@ nav ul li a:hover {
 /*************/
 
 .portfolio {
-  animation: slide_in_up 1s ease;
+  animation: slide_in_right 1s ease;
   margin-bottom: 20px;
 }
 
 .portfolio-title {
-  font-size: 35px;
+  font-family: var(--fonts);
+  font-size: 38px;
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -318,6 +336,7 @@ nav ul li a:hover {
 }
 
 .project-title {
+  font-family: var(--fonts);
   font-size: 26px;
   padding: 20px 0;
   color: var(--gunmetal);
@@ -328,6 +347,8 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: var(--fonts);
+  font-weight: bold;
   border: 2px var(--gunmetal);
   border-style: solid none;
   height: 100px;
@@ -386,6 +407,9 @@ footer a:hover {
 /*****************/
 
 @media only screen and (max-width: 885px) {
+
+  /* HEADER / NAV */
+
   header {
     height: 120px;
     justify-content: center;
@@ -400,6 +424,8 @@ footer a:hover {
     margin-bottom: 10px;
   }
 
+  /* ABOUT */
+
   .about-content {
     flex-direction: column;
     justify-content: center;
@@ -408,6 +434,8 @@ footer a:hover {
   .about-content p {
     margin: 0 40px 30px 40px;
   }
+
+  /* CONTACT ME */
 
   .form-input {
     line-height: 1;
@@ -421,14 +449,12 @@ footer a:hover {
   .form-input textarea {
     width: 300px;
   }
-
-  .err-text {
-    font-size: 20px;
-    margin-left: 40px;
-  }
 }
 
 @media only screen and (max-width: 568px) {
+
+  /* HEADER / NAV */
+
   nav ul {
     justify-content: center;
   }
@@ -441,19 +467,42 @@ footer a:hover {
     padding: 10px 5px;
   }
 
+  /* CONTACT ME */
+
   #contact-form {
     margin-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 440px) {
+
+  /* HEADER / NAV */
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  /* ABOUT */
+
+  .about-content {
+    max-width: 350px;
+  }
+
+  /* CONTACT ME */
+
   .form-input {
     margin: 0px 5px; 
   }
 
   .form-input textarea {
-    width: 220px;
+    width: 250px;
   }
+
+  .err-text {
+    font-size: 16px;
+  }
+
+  /* PORTFOLIO */
 
   .project img {
     height: 140px;
@@ -467,6 +516,12 @@ footer a:hover {
 
   .project-links {
     width: 230px;
+  }
+
+  /* RESUME */
+
+  .prof-list-container {
+    padding: 20px;
   }
 }
 

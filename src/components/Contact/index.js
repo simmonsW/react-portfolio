@@ -31,8 +31,8 @@ function Contact() {
 
   return(
     <section className="contact-me">
-      <div id="contact-title">
-        <h1>
+      <div>
+        <h1 id="contact-title">
           Contact Me!
         </h1>
       </div>
