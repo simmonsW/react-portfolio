@@ -80,7 +80,9 @@ nav ul li a:hover {
 .about-me {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   animation: slide_in_up 1s ease;
 }
 
@@ -96,6 +98,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  max-width: 1080px;
 }
 
 .about-content img {
