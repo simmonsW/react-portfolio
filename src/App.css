@@ -319,6 +319,7 @@ nav ul li a:hover {
 }
 
 .project img {
+  position: relative;
   height: 180px;
   width: 300px;
   border: 2px solid black;
@@ -331,9 +332,14 @@ nav ul li a:hover {
 }
 
 .project-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  padding: 20px;
+  height: 100px;
+  padding: 0px 20px;
   width: 320px;
 }
 
@@ -459,6 +465,7 @@ footer a {
   }
 
   .project-desc {
+    height: 120px;
     width: 250px;
   }
 
