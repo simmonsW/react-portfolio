@@ -35,10 +35,9 @@ function App() {
             {navSelect()}
           </main>
         </div>
-        <div className="push"></div>
-      </div>
-      <div>
-        <Footer></Footer>
+        <div>
+          <Footer></Footer>
+        </div>
       </div>
     </div>
   );

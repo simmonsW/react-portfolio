@@ -14,15 +14,16 @@
 }
 
 html {
+  /* max-height: 100vh; */
   overflow-x: hidden;
   background-color: var(--cultured);
 }
 
 .wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -80px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /**********/
@@ -107,13 +108,17 @@ nav ul li a:hover {
 }
 
 .about-content img {
-  width: 350px;
+  width: 270px;
   height: auto;
-  padding: 20px 40px 20px 40px;
-  border-radius: 100px / 75px;
+  margin: 20px 40px;
+  border: 2px solid var(--gunmetal);
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
 }
 
 .about-content p {
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--gunmetal);
   background-color: var(--powder_blue);
   color: var(--gunmetal);
   font-family: var(--fonts);
@@ -153,6 +158,8 @@ nav ul li a:hover {
 #contact-form {
   display: flex;
   flex-direction: column;
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--gunmetal);
   border-radius: 50px;
   margin-bottom: 20px;
   background-color: var(--powder_blue);
@@ -245,6 +252,8 @@ nav ul li a:hover {
 
 .prof-list-container {
   padding: 20px 40px;
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--gunmetal);
   border-radius: 50px;
   background-color: var(--powder_blue);
 }
@@ -314,6 +323,8 @@ nav ul li a:hover {
 }
 
 .project {
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--gunmetal);
   color: var(--gunmetal);
   width: fit-content;
   padding: 20px;
@@ -379,27 +390,23 @@ nav ul li a:hover {
 
 footer {
   background-color: var(--pale_purple_pantone);
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 30px;
   height: 80px;
   width: 100vw;
   bottom: 0;
 }
 
-footer, .push {
-  height: 80px;
-}
-
 footer a {
   color: var(--teal);
   font-size: 40px;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 footer a:hover {
-  animation: shake 0.4s ease;
+  animation: shaker 0.4s ease;
 }
 
 /*****************/
@@ -568,6 +575,21 @@ footer a:hover {
   }
   66% {
     transform: rotate(-20deg) scale(1.6);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shaker {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(20deg);
+  }
+  66% {
+    transform: rotate(-20deg);
   }
   100% {
     transform: rotate(0deg);
