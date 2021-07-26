@@ -380,6 +380,10 @@ nav ul li a:hover {
   color: black;
 }
 
+.project-links .youtube-link {
+  font-size: 110%;
+}
+
 .project-links div:hover {
   animation: shake 0.4s ease;
 }
