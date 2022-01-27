@@ -273,13 +273,13 @@ nav ul li a:hover {
 .prof-list-title {
   color: var(--gunmetal);
   font-family: var(--fonts);
+  text-align: center;
   font-size: 28px;
   padding: 0 15px 10px 15px;
+  border-bottom: 2px solid var(--gunmetal);
 }
 
 .prof-list {
-  border: 2px var(--gunmetal);
-  border-style: solid none;
   color: var(--gunmetal);
   padding: 10px 0px;
   list-style: none;
@@ -291,6 +291,10 @@ nav ul li a:hover {
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
+}
+
+.resume-download {
+  border-top: 2px solid var(--gunmetal);
 }
 
 /*************/

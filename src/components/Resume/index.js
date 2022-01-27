@@ -4,11 +4,13 @@ function Resume() {
 
   const proficiencyArr = [
     'Javascript',
-    'CSS',
-    'HTML',
+    'HTML/CSS',
     'Node.js',
+    'React'
+  ];
+
+  const pastExperienceArr = [
     'Express.js',
-    'React',
     'MongoDB',
     'MySQL',
     'Sequelize',
@@ -33,13 +35,23 @@ function Resume() {
             </li>
           ))}
         </ul>
+        <h2 className="prof-list-title">
+          Past Experience
+        </h2>
+        <ul className="prof-list">
+          {pastExperienceArr.map((prof, index) => (
+            <li key={index} className="prof">
+              {prof}
+            </li>
+          ))}
+        </ul>
         <a
-          href={require('../../assets/resume/wyatt-simmons-test-resume.pdf').default}
+          href={require('../../assets/resume/wyatt-simmons-resume.pdf').default}
           target="_blank"
           rel="noreferrer"
           download="wyatt-simmons-test-resume.pdf"
         >
-          <h3>
+          <h3 className="resume-download">
             Download Resume
           </h3>
         </a>
