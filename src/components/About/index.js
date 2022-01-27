@@ -14,8 +14,8 @@ function About() {
         />
         <p className="about-description">
           Welcome! My name is Wyatt Simmons and thanks for checking out my website! I
-          am a soon to be graduate from the UCLA coding Bootcamp. I enjoy working with 
-          backend tools, as well as JavaScript. I enjoy working through problems to 
+          am a recent graduate from the UCLA coding Bootcamp. I enjoy working with 
+          backend tools, and especially with JavaScript. I enjoy working through problems to 
           find solutions. Check out the Portfolio tab to see some of my latest work.
         </p>
       </div>
