@@ -1,33 +1,35 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React from 'react';
+// import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
 
-  const [ formState, setFormState ] = useState({ name: '', email: '', message: '' });
-  const [ errorMessage, setErrorMessage ] = useState('');
+  // const [ formState, setFormState ] = useState({ name: '', email: '', message: '' });
+  // const [ errorMessage, setErrorMessage ] = useState('');
 
-  const { name, email, message } = formState;
+  // const { name, email, message } = formState;
 
-  function handleChange(e) {
-    if (e.target.name = 'email') {
-      const isValid = validateEmail(e.target.value);
+  // function handleChange(e) {
+  //   if (e.target.name = 'email') {
+  //     const isValid = validateEmail(e.target.value);
 
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    }
+  //     if (!isValid) {
+  //       setErrorMessage('Your email is invalid.');
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   }
+                                                                                   
 
-    if (!errorMessage) {
-      setFormState({...formState, [e.target.name]: e.target.value });
-    }
-  };
+  
+  //   if (!errorMessage) {
+  //     setFormState({...formState, [e.target.name]: e.target.value });
+  //   }
+  // };
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(formState);
-  }
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   console.log(formState);
+  // }
 
   return(
     <section className="contact-me">
@@ -36,7 +38,17 @@ function Contact() {
           Contact Me
         </h1>
       </div>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <div id="contact-body">
+        <p className="contact-blurb">
+          If you wish to get in touch, feel free to send an email to:
+          <br />
+          <a href="mailto:wya.simmons@gmail.com"> wya.simmons@gmail.com</a>
+          <br />
+          or reach out over on LinkedIn.
+        </p>
+      </div>
+
+      {/* <form id="contact-form" onSubmit={handleSubmit}>
         <div className="form-input">
           <label htmlFor="name">Name:</label>
           <input type="name" name="name" defaultValue={name} onBlur={handleChange} />
@@ -55,7 +67,7 @@ function Contact() {
           </div>
         )}
         <button type="submit" className='submit-btn'>Submit</button>
-      </form>
+      </form> */}
     </section>
   )
 };

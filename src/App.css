@@ -155,7 +155,7 @@ nav ul li a:hover {
   color: var(--teal);
 }
 
-#contact-form {
+#contact-body {
   display: flex;
   flex-direction: column;
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.2);
@@ -165,7 +165,22 @@ nav ul li a:hover {
   background-color: var(--powder_blue);
 }
 
-.submit-btn {
+.contact-blurb {
+  font-family: var(--fonts);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+  padding: 30px;
+}
+
+.contact-blurb a {
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--gunmetal);
+}
+
+/* .submit-btn {
   font-family: var(--fonts);
   font-weight: bolder;
   font-size: 20px;
@@ -184,9 +199,9 @@ nav ul li a:hover {
 .submit-btn:hover {
   color: var(--pale_purple_pantone);
   background-color: var(--teal);
-}
+} */
 
-.form-input {
+/* .form-input {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -224,7 +239,7 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: 20px;
   padding: 5px 40px;
-}
+} */
 
 /**********/
 /* RESUME */
@@ -503,7 +518,19 @@ footer a:hover {
     max-width: 350px;
   }
 
+  .about-content p {
+    font-size: 16px;
+  }
+
   /* CONTACT ME */
+
+  .contact-blurb {
+    font-size: 16px;
+  }
+
+  .contact-blurb a {
+    font-size: 20px;
+  }
 
   .form-input {
     margin: 0px 5px; 
