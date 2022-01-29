@@ -49,7 +49,7 @@ function Resume() {
           href={require('../../assets/resume/wyatt-simmons-resume.pdf').default}
           target="_blank"
           rel="noreferrer"
-          download="wyatt-simmons-test-resume.pdf"
+          download="wyatt-simmons-resume.pdf"
         >
           <h3 className="resume-download">
             Download Resume

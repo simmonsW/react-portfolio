@@ -26,7 +26,7 @@ const Project = ({ name }) => {
       id: 3,
       projectName: 'Rate My Ride',
       projDesc: "A social platform for users to show off their car and check out other user's cars",
-      deployedProj: 'https://rate-my-ride.herokuapp.com/',
+      deployedProj: 'https://rate-my-riide.herokuapp.com/',
       githubRepo: 'https://github.com/albertjly/rate-my-ride',
       imageName: 'rate-my-ride',
       demoVid: false
