@@ -42,7 +42,7 @@ function Contact() {
         <p className="contact-blurb">
           If you wish to get in touch, feel free to send an email to:
           <br />
-          <a> wya.simmons@gmail.com</a>
+          <span className="contact-email"> wya.simmons@gmail.com</span>
           <br />
           or reach out over on LinkedIn.
         </p>
